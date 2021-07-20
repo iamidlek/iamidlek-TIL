@@ -1,0 +1,86 @@
+---
+title: Day 1
+sidebar_position: 1
+---
+
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '5px',
+      color: '#fff',
+      padding: '0.1em 0.3em',
+      margin: '0 0.05em 0 0',
+    }}>
+    {children}
+  </span>
+);
+
+## Progress
+<Highlight color="#25c2a0">클립 번호</Highlight> 01~17
+
+## Summary
+#### 프로그래밍과 친해지기
+- 프로그래밍이란?
+  - 컴퓨터가 알아들을 수 있는 명령을 내려 원하는 작업을 수행시키는 것
+- 알고리즘이란?
+  - 엘리베이터의 움직임을 통한 다이어그램을 그려보며 이해
+    어떤 상황에 어떤 움직임을 하도록 순차적으로 구성하는 것
+- 개발자와의 대화
+  - (Native app, Web app), (쿠키, 세션, 캐시), 프레임워크 와 같은 용어의 이해
+
+#### HTML & CSS 첫걸음
+- HTML, CSS, JS의 역할과 <Highlight color="#1877F2">VS code</Highlight>설치 및 환경설정
+- 웹 표준과 웹 접근성에 대한 이해
+- <Highlight color="#1877F2">VS code</Highlight>의 사용법과 유용한 단축키
+
+## Quiz
+#### 문제 1. Native app의 특징이 아닌 것은?
+1. 최고의 성능을 낼 수 있다.
+2. 유려한 UI를 구현 할 수 있다.
+3. 구현 난이도가 높은 편이다.
+4. 다양한 플랫폼에서 사용 가능하다.
+
+#### 문제 2. 다음 중 태그를 wrap 하기 위한 순서가 아닌 것은?
+1. 랩핑 할 태그를 선택
+2. Ctrl + W 로 랩핑을 선택
+3. Ctrl + Shift + P → 약어로 랩핑을 선택
+4. 태그를 입력
+
+
+#### 문제 3. 다음 중 웹 표준이 가장 지켜지지 않는 브라우저는?
+1. 오페라
+2. 사파리
+3. 인터넷 익스플로러
+4. 크롬
+
+``` HTML title="정답"
+A1. 4
+
+Native app의 경우 해당 플랫폼과 밀착되어
+해당 플랫폼이 제공하는 기능들을 사용하기 때문에
+다양한 플랫폼에서 사용 할 수 없다.
+
+
+A2. 2
+
+Ctrl + W는 랩핑을 위한 단축키가 아니다. (편집기 닫기)
+Ctrl + Shift + P 모든 명령 표시(에디터의 모든 명령에 접근) 
+Wrap with Abbreviation 약어로 랩핑 선택
+태그 입력으로 랩핑이 완료된다.
+
+
+A3. 2
+ 
+브라우저 점유율이 높았던 인터넷 익스플로러는 웹 표준을 따르지 않아
+낮은 호환성을 가지는 브라우저이고 적은 기능 과 느린 속도 등의 문제도 있다.
+
+```
+
+## Evidence
+- 확인용 사진
+
+![Evidence1](/img/ev/1-1.jpg)
+- 확인용 캡쳐
+
+![Evidence2](/img/ev/1-2.png)
