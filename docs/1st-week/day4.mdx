@@ -1,0 +1,93 @@
+---
+title: Day 4
+sidebar_position: 4
+---
+
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '5px',
+      color: '#fff',
+      padding: '0.1em 0.3em',
+      margin: '0 0.05em 0 0',
+    }}>
+    {children}
+  </span>
+);
+
+## Progress
+<Highlight color="#25c2a0">컴공 전공 필수 Step1</Highlight> 1~5
+
+## Summary
+#### Visual Code
+- 설치
+- 빈 프로젝트 만들기
+### [Details](https://yhole.notion.site/001-C-with-Visual-Studio-f32f93cb0321401f9ec389c5d1df5cc7)
+
+#### 변수와 상수
+- 변수의 선언
+- 정수, 실수의 표현 방법
+- 2의 보수 방식
+### [Details](https://yhole.notion.site/002-c594763fcf1c4e35be9941f45d5015a5)
+
+#### 기본 입출력
+- 형식 지정자
+- 실수형 입출력
+- 다양한 입출력
+### [Details](https://yhole.notion.site/003-b2395f05a8724432b72dd3ebb0ef033a)
+
+#### 연산자
+- 다양한 연산자
+- 연산자 우선순위
+### [Details](https://yhole.notion.site/004-d636247fc0cd415083e2ebb83ede9fd6)
+
+## Quiz
+#### 문제 1. C 의 예약어가 아닌것은?
+1. form
+2. string
+3. void
+4. char
+
+#### 문제 2. Escape Sequence가 아닌것은?
+1. &#92;t
+2. &#92;&#92;
+3. &#92;b
+4. &#92;k
+
+#### 문제 3. %lld 의 설명으로 옳지 않은 것은?
+1. 정수형이다
+2. 입력시에만 사용한다
+3. 8byte이다
+4. 형식 지정자는 long long 이다
+
+```html title="정답"
+A1. 1
+string 문자열
+void 반환하지 않는다
+char 문자
+
+
+A2. 4
+
+1. 수평 탭 넣기
+2. 백슬래시 넣기
+3. 백 스페이스 넣기
+4. 오답
+
+
+A3. 2
+ 
+입력, 출력 둘다 사용 가능하다
+double이 다르다
+입력시 %lf
+출력시 %f
+```
+
+## Evidence
+- 확인용 사진
+
+![Evidence1](/img/ev/4-1.jpg)
+- 확인용 캡쳐
+
+![Evidence2](/img/ev/4-2.png)
