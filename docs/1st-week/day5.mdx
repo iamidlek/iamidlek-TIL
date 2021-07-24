@@ -1,0 +1,101 @@
+---
+title: Day 5
+sidebar_position: 5
+---
+
+export const Highlight = ({children, bgcolor, color}) => (
+  <span
+    style={{
+      backgroundColor: bgcolor,
+      borderRadius: '5px',
+      color: color,
+      padding: '0.1em 0.3em',
+      margin: '0 0.05em 0 0',
+    }}>
+    {children}
+  </span>
+);
+
+## Progress
+<Highlight bgcolor="#DB9509" color="#fff">컴퓨터공힉 전공 필수 Step1</Highlight>
+<Highlight bgcolor="#4B0082" color="#fff">운영체제</Highlight>
+<Highlight bgcolor="#25c2a0" color="#fff">클립 번호</Highlight>92~111
+
+## Summary
+#### 운영체제의 역할
+- 시스템 자원 관리자
+- 컴퓨터 하드웨어와 응용 프로그램을 제어
+- 사용자와 컴퓨터간의 커뮤니케이션 지원
+
+<!-- [Details](https://yhole.notion.site/001-C-with-Visual-Studio-f32f93cb0321401f9ec389c5d1df5cc7) -->
+
+#### 운영체제의 역사
+- 1960 배치 처리 시스템
+- 1970 시분할/멀티 태스킹 시스템
+- 1980 GUI, 개인용 컴퓨터
+- 1990 다양한 응용프로그램, 인터넷 발달
+- 2000 오픈 소스 활성화, 가상머신, 대용량 병렬처리
+
+<!-- [Details](https://yhole.notion.site/002-c594763fcf1c4e35be9941f45d5015a5) -->
+
+#### 운용체제 구조
+- 시스템 콜
+- API
+- 사용자 모드 커널 모드
+
+<!-- [Details](https://yhole.notion.site/003-b2395f05a8724432b72dd3ebb0ef033a) -->
+
+#### 스케쥴링
+- 선점형 비선점형
+- 다양한 스케쥴링 알고리즘
+- RTOS, GPOS
+
+<!-- [Details](https://yhole.notion.site/004-d636247fc0cd415083e2ebb83ede9fd6) -->
+
+## Quiz
+#### 문제 1. 1970년대 UNIX에 구현된 기술이 아닌것은?
+1. 멀티 태스킹
+2. 시분할 시스탬
+3. 멀티 프로세싱
+4. 멀티 프로그래밍
+
+#### 문제 2. 멀티 프로그래밍의 설명이 아닌것은?
+1. 응용프로그램은 CPU를 온전히 많이 사용한다
+2. 응답시간을 짧게한다
+3. 다중 사용자를 지원한다
+4. CPU를 최대한 가동하게 한다
+
+
+#### 문제 3. 선점형 스케쥴러의 설명이 아닌 것은?
+1. 알고리즘 종류로 FCFS 가 있다
+2. 알고리즘 종류로 SJF 가 있다
+3. 알고리즘 종류로 Round Robin 이 있다
+4. 프로세스의 자발적 blocking 상태를 기다린다
+
+```html title="정답"
+A1. 3
+
+멀티 프로세싱은 1980년 후반 부터 도입
+(Multiprocessor UNlX Operating Systems)
+
+
+A2. 1
+
+응용프로그램들은 중간중간 다른 작업을 필요로 한다
+파일 불러오기 등
+
+
+A3. 3
+ 
+선점형 Round Robin, SRT, 선점 우선순위, 다단계 큐
+비선점형 FCFS, SJF, HRRN, 우선순위
+
+```
+
+## Evidence
+- 확인용 사진
+
+![Evidence1](/img/ev/5-1.jpg)
+- 확인용 캡쳐
+
+![Evidence2](/img/ev/5-2.png)
