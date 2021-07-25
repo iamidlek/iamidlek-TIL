@@ -3,9 +3,10 @@ title: Day 5
 sidebar_position: 5
 ---
 
-export const Highlight = ({children, bgcolor, color}) => (
+export const Highlight = ({children, dis, bgcolor, color}) => (
   <span
     style={{
+      displa: dis,
       backgroundColor: bgcolor,
       borderRadius: '5px',
       color: color,
@@ -17,12 +18,9 @@ export const Highlight = ({children, bgcolor, color}) => (
 );
 
 ## Progress
-<Highlight bgcolor="#DB9509" color="#fff">컴퓨터공힉 전공 필수 Step1</Highlight>
-</br>
-
-<Highlight bgcolor="#4B0082" color="#fff">운영체제</Highlight> 
-
-<Highlight bgcolor="#25c2a0" color="#fff">클립 번호</Highlight> 92~111
+<Highlight dis="block" bgcolor="#DB9509" color="#fff">컴퓨터공힉 전공 필수 Step1</Highlight>
+<Highlight dis="block" bgcolor="#4B0082" color="#fff">운영체제</Highlight> 
+<Highlight dis="inline" bgcolor="#25c2a0" color="#fff">클립 번호</Highlight> 92~111
 
 ## Summary
 #### 운영체제의 역할
