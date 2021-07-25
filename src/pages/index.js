@@ -15,8 +15,8 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
-            to="/docs/1st-week/day1">
+            className="button button--secondary button--lg custombutton"
+            to="/docs/21년07월/firstweek/day1">
             CHECK!
           </Link>
         </div>

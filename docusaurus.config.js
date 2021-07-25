@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'Yhole',
   tagline: 'TIL : Today I Learned',
-  url: 'https://docusaurus-2.netlify.com',
+  url: 'https://yhole-til.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -13,6 +13,9 @@ module.exports = {
   organizationName: 'iamidlek', // Usually your GitHub org/user name.
   projectName: 'til', // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      defaultMode: 'light',
+    },
     navbar: {
       title: 'TIL',
       logo: {
@@ -20,20 +23,36 @@ module.exports = {
         src: 'img/Background.png',
       },
       items: [{
-          type: 'doc',
-          docId: 'intro',
+          // type: 'doc',
+          // docId: 'intro',
           position: 'left',
           label: 'Trace',
+          items: [
+            {
+              label: '7월',
+              to: 'docs/21년07월/firstweek/day1',
+            },
+            // {
+            //   label: '2주차',
+            //   to: 'docs/21년07월/twoweek/day1',
+            // },
+            // {
+            //   label: 'devlog',
+            //   to: 'docs/TIL/html/day1',
+            // },
+            // ... more items
+          ],
         },
         // {
         //   to: '/blog',
         //   label: 'Blog',
         //   position: 'left'
         // },
-        { 
-          href: 'https://github.com/iamidlek/iamidlek.github.io',
-          label: 'git',
+        {
+          href: 'https://github.com/iamidlek/iamidlek-TIL',
           position: 'right',
+          className: 'mainpage-github-link',
+          'aria-label': 'GitHub repository',
         },
       ],
     },
@@ -41,15 +60,15 @@ module.exports = {
       style: 'dark',
       links: [{
           title: 'Trace',
-          items: [{
-            label: 'KDI 제출 양식',
-            to: '/docs/intro',
-          },
-          {
-            label: '콘텐츠',
-            to: '/docs/1st-week/day1',
-          } 
-          ],
+          // items: [{
+          //   label: 'KDI 제출 양식',
+          //   to: '/docs/intro',
+          // },
+          // {
+          //   label: '콘텐츠',
+          //   to: '/docs/1st-week/day1',
+          // } 
+          // ],
 
         },
         // {

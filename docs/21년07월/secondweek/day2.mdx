@@ -1,0 +1,139 @@
+---
+title: Day 2
+sidebar_position: 2
+---
+
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '5px',
+      color: '#fff',
+      padding: '0.1em 0.3em',
+      margin: '0 0.05em 0 0',
+    }}>
+    {children}
+  </span>
+);
+
+## Progress
+<Highlight color="#25c2a0">클립 번호</Highlight> 18~39
+
+## Summary
+#### 기초 지식
+- 이미지 포멧
+  - JPG, PNG, GIF, WEBP, SVG
+- 특수기호
+  - 한/영 명칭
+
+#### HTML
+- 기본 형태
+- 속성(Attributes)과 값
+- 각 태그의 의미와 범위
+- 웹 표준이란?
+- 확인 예제
+
+#### CSS
+- 선언 방식 (인라인, 내장, 외부)
+- 선택자
+- 속성(Properties)의 종류
+- 적용 예제
+
+## [More Details](https://yhole.notion.site/001-HTML-0928fdb7ae4e41058c489fb0cbcf5017)
+
+## Quiz
+#### 문제 1. 웹 표준 기술에 해당하지 않는 것은?
+1. CSS
+2. XML
+3. DTD
+4. DOM
+
+#### 문제 2. 다음 중 화면에 표시되는 'Home'의 color 가 red로 변하지 않는 것은?
+```html
+<div class="container">
+  <div class="item">
+    <ul>
+      <li class="target"><a href="#">Home</a></li>
+    </ul>
+  </div>
+</div>
+```
+
+```css
+1. 
+.item .target a{
+  color: red;
+}
+
+2. 
+.item {
+  color: white;
+}
+.target {
+  color: red;
+}
+
+3. 
+a{
+  color: red;
+}
+.target {
+  color: blue;
+}
+
+4. 
+body * {
+  color: red
+}
+```
+
+#### 문제 3. 파란색 사각형의 width 값은?
+```css
+div {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 20px;
+  border: 5px solid black;
+}
+```
+1. 200px
+2. 150
+3. 150px
+4. 170px
+
+```html title="정답"
+A1. 3
+웹 표준기술은
+CSS (Cascading Style Sheets)
+XML (eXtensible Markup Language)
+DOM(Document Object Model)
+ECMAScript 
+등이 해당된다
+
+DTD(Document Type Definition)
+브라우저에 어떤 문서형 정의을 적용할 것인가를 선언하는 의미를 가진 약어다
+
+
+A2. 2
+
+a (앵커) 태그에 color 색상은 상속되어지지 않는다.
+
+
+A3. 4
+ 
+전체 200px 에서 양쪽에 적용되는
+border 5px + 5px
+padding 10px + 10px
+을 제한 170px아 정답이 된다
+```
+
+## Evidence
+- 확인용 사진
+
+![Evidence1](/img/ev/2.jpg)
+- 확인용 캡쳐
+
+![Evidence2](/img/ev/2.png)
