@@ -5,7 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
-// 메인 페이지의 버튼
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -16,7 +16,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
+            to="/docs/1st-week/day1">
             CHECK!
           </Link>
         </div>

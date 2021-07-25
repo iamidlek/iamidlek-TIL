@@ -1,4 +1,5 @@
 ---
+sidebar_label: '[KDT] 프론트엔드 과정'
 sidebar_position: 1
 ---
 

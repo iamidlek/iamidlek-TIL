@@ -3,10 +3,9 @@ title: Day 5
 sidebar_position: 5
 ---
 
-export const Highlight = ({children, dis, bgcolor, color}) => (
+export const Highlight = ({children, bgcolor, color}) => (
   <span
     style={{
-      displa: dis,
       backgroundColor: bgcolor,
       borderRadius: '5px',
       color: color,
@@ -17,14 +16,29 @@ export const Highlight = ({children, dis, bgcolor, color}) => (
   </span>
 );
 
+export const Highlights = ({children, bgcolor, color}) => (
+  <div>
+    <span
+      style={{
+        backgroundColor: bgcolor,
+        borderRadius: '5px',
+        color: color,
+        padding: '0.1em 0.3em',
+        margin: '0 0.05em 0 0',
+      }}>
+      {children}
+    </span>
+  </div>
+);
+
+
 ## Progress
-<Highlight dis="block" bgcolor="#DB9509" color="#fff">컴퓨터공힉 전공 필수 Step1</Highlight>
-</br>
+<Highlights bgcolor="#DB9509" color="#fff">컴퓨터공힉 전공 필수 Step1</Highlights>
 
-<Highlight dis="block" bgcolor="#4B0082" color="#fff">운영체제</Highlight> 
-</br>
+<Highlights bgcolor="#4B0082" color="#fff">운영체제</Highlights> 
 
-<Highlight dis="inline" bgcolor="#25c2a0" color="#fff">클립 번호</Highlight> 92~111
+<Highlight bgcolor="#25c2a0" color="#fff">클립 번호</Highlight> 92~111
+
 
 ## Summary
 #### 운영체제의 역할
@@ -77,7 +91,7 @@ export const Highlight = ({children, dis, bgcolor, color}) => (
 3. 알고리즘 종류로 Round Robin 이 있다
 4. 프로세스의 자발적 blocking 상태를 기다린다
 
-```html title="정답"
+```plan text title="정답"
 A1. 3
 
 멀티 프로세싱은 1980년 후반 부터 도입

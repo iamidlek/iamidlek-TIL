@@ -42,9 +42,15 @@ module.exports = {
       links: [{
           title: 'Trace',
           items: [{
-            label: 'description',
+            label: 'KDI 제출 양식',
             to: '/docs/intro',
-          }, ],
+          },
+          {
+            label: '콘텐츠',
+            to: '/docs/1st-week/day1',
+          } 
+          ],
+
         },
         // {
         //   title: 'Community',

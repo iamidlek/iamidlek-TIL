@@ -16,10 +16,25 @@ export const Highlight = ({children, bgcolor, color}) => (
   </span>
 );
 
-## Progress
-<Highlight bgcolor="#DB9509" color="#fff">컴퓨터공힉 전공 필수 Step1</Highlight>
+export const Highlights = ({children, bgcolor, color}) => (
+  <div>
+    <span
+      style={{
+        backgroundColor: bgcolor,
+        borderRadius: '5px',
+        color: color,
+        padding: '0.1em 0.3em',
+        margin: '0 0.05em 0 0',
+      }}>
+      {children}
+    </span>
+  </div>
+);
 
-<Highlight bgcolor="#4B0082" color="#fff">소프트웨어 베이직</Highlight> 
+## Progress
+<Highlights bgcolor="#DB9509" color="#fff">컴퓨터공힉 전공 필수 Step1</Highlights>
+
+<Highlights bgcolor="#4B0082" color="#fff">소프트웨어 베이직</Highlights> 
 
 <Highlight bgcolor="#25c2a0" color="#fff">강의 번호</Highlight> 1~5
 
