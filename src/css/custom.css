@@ -17,17 +17,39 @@
   --ifm-code-font-size: 95%;
 }
 
-.heroBanner_src-pages-index-module{
-  background:
-  radial-gradient(circle at 50% 0,
-    rgba(255,0,0,.5),
-    rgba(255,0,0,0) 70.71%),
-  radial-gradient(circle at 6.7% 75%,
-    rgba(0,0,255,.5),
-    rgba(0,0,255,0) 70.71%),
-  radial-gradient(circle at 93.3% 75%,
-    rgba(0,255,0,.5),
-    rgba(0,255,0,0) 70.71%) beige;
+ul.quiz{
+  list-style: none;
+  padding-left: 1rem;
+  max-width: 600px;
+}
+
+ul.quiz li:first-child{
+  margin-left: 6px;
+  margin-bottom: 2px;
+  color: #D17141;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+ul.quiz li:nth-child(2){
+  border-top-left-radius: 8px;
+  border-top-right-radius: 10px;
+  padding-top: 7px;
+}
+
+ul.quiz li:last-child{
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 5px;
+}
+
+ul.quiz li:first-child ~ li{
+  line-height: 1.5rem;
+  padding-left: 7px;
+  margin-top: 0;
+  margin-left: 4px;
+  border-left:3px solid #F5894E;
+  background-color: rgba(240, 191, 89,0.3);
 }
 
 .docusaurus-highlight-code-line {
@@ -71,13 +93,13 @@ html[data-theme='dark'] .mainpage-github-link {
   background-size: cover;
 }
 
-html[data-theme='dark'] .hero .buttons_src-pages-index-module .custombutton {
+html[data-theme='dark'] a.custombutton {
   background-color: #14120f;
   color: #ebedf0;
   border-color: #14120f;
 }
 
-html[data-theme='dark'] .hero .buttons_src-pages-index-module .custombutton:hover {
+html[data-theme='dark'] a.custombutton:hover {
   background-color: #273023;
   border-color: #273023;
 }
