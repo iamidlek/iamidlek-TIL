@@ -3,12 +3,12 @@ title: Day 1
 sidebar_position: 1
 ---
 
-export const Highlight = ({children, color}) => (
+export const Highlight = ({children, bgcolor, color}) => (
   <span
     style={{
-      backgroundColor: color,
+      backgroundColor: bgcolor,
       borderRadius: '5px',
-      color: '#fff',
+      color: color,
       padding: '0.1em 0.3em',
       margin: '0 0.05em 0 0',
     }}>
@@ -16,5 +16,125 @@ export const Highlight = ({children, color}) => (
   </span>
 );
 
-## Progress
+export const Highlights = ({children, bgcolor, color}) => (
+  <div style={{
+        margin: '0 0 0.5em 0',
+      }}>
+    <span
+      style={{
+        backgroundColor: bgcolor,
+        borderRadius: '5px',
+        color: color,
+        padding: '0.1em 0.3em',
+      }}>
+      {children}
+    </span>
+  </div>
+);
 
+
+## Progress
+<Highlights bgcolor="#DB9509" color="#fff">Intro to Programming</Highlights>
+
+<Highlights bgcolor="#4B0082" color="#fff">JavaScript 입문</Highlights> 
+
+<Highlight bgcolor="#25c2a0" color="#fff">클립 번호</Highlight> 40~73
+
+
+## Summary
+#### 변수와 연산자
+- 변수, 상수 데이터타입
+- 산술, 논리 연산자
+- 비교 연산자, 문자열 붙이기
+
+<!-- [Details](https://yhole.notion.site/001-C-with-Visual-Studio-f32f93cb0321401f9ec389c5d1df5cc7) -->
+
+#### 조건문, 반복문, 함수
+- if, switch/case/break
+- while
+- for of, for in
+- break,continue
+- 함수, 화살표 함수
+
+<!-- [Details](https://yhole.notion.site/002-c594763fcf1c4e35be9941f45d5015a5) -->
+
+#### 객체
+- 객체의 구조,접근
+- 비구조화 할당
+- getter, setter함수
+
+<!-- [Details](https://yhole.notion.site/003-b2395f05a8724432b72dd3ebb0ef033a) -->
+
+#### 배열 내장함수
+- forEach, map, indexOf, find, findIndex, filter
+- splice, slice, shift, pop, concat, join
+- reduce
+
+<!-- [Details](https://yhole.notion.site/004-d636247fc0cd415083e2ebb83ede9fd6) -->
+
+#### 프로토타입과 클래스
+- 객체 생성
+- 프로토타입 설정
+- 클래스, 메서드, 상속
+
+<!-- [Details](https://yhole.notion.site/004-d636247fc0cd415083e2ebb83ede9fd6) -->
+
+## Quiz
+#### 문제 1. 변수 name에 kim값이 있을때 출력 결과가 다른 것은?
+1. 'Hello, ' + name + '!'
+2. 'Hello, kim !'
+3. &#96;Hello, ${name}!&#96;	
+4. 'Hello, kim!'
+
+<details>
+  <summary>
+  답안 확인
+  </summary>
+  <ul class='quiz'>
+    <li>②</li>
+    <li>kim 과 ! 사이의 공백은 다른 선택지에서는 나타나지 않는다.</li>
+  </ul>
+</details>
+
+#### 문제 2. 배열 내장함수의 설명으로 틀린 것은?
+1. map을 사용하려면 빈 배열 선언이 선행되어야 한다
+2. indexOf는 찾는 값이 없을 경우 -1을 retrun한다
+3. filter에는 조건을 검사하는 함수를 넣는다
+4. slice는 원래의 배열을 건드리지 않는다
+
+<details>
+  <summary>
+  답안 확인
+  </summary>
+  <ul class='quiz'>
+    <li>①</li>
+    <li>map 의 파라미터로 변화함수를 줄 수 있고</li>
+    <li>각 들어오는 값들을 변화함수에 넣고 반환한다</li>
+  </ul>
+</details>
+
+
+#### 문제 3. 클래스의 설명으로 틀린 것은?
+1. JavaScript의 ES6부터 추가되었다
+2. 객체 생성자로 구현했던 코드를 명확하고 깔끔하게 해준다
+3. 메서드를 만들면 자동으로 prototype 등록이 된다 
+4. 다른 클래스의 상속이 어려워 졌다
+
+<details>
+  <summary>
+  답안 확인
+  </summary>
+  <ul class='quiz'>
+    <li>④</li>
+    <li>클래스를 사용함으로 다른 클래스를 쉽게 상속 받는다</li>
+    <li>extends 키워드를 사용, super()함수가 상속받은 클래스의 생성자를 가르킨다</li>
+  </ul>
+</details>
+
+## Evidence
+- 확인용 사진
+
+![Evidence1](/img/ev/2주차/1-1.jpg)
+- 확인용 캡쳐
+
+![Evidence2](/img/ev/2주차/1-2.png)
