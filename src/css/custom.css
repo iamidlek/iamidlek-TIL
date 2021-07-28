@@ -93,13 +93,24 @@ html[data-theme='dark'] .mainpage-github-link {
   background-size: cover;
 }
 
-html[data-theme='dark'] a.custombutton {
-  background-color: #14120f;
+.buttons_src-pages-index-module a.custombutton {
+  background-color: transparent;
+  border: 2px solid;
   color: #ebedf0;
-  border-color: #14120f;
+  transition: .5s;
+}
+
+.buttons_src-pages-index-module a.custombutton:hover {
+  background-color: rgba(255, 227, 167, 0.2);
+  transform: scale(1.1);
+}
+
+html[data-theme='dark'] a.custombutton {
+  background-color: transparent;
+  color: #14120f;
 }
 
 html[data-theme='dark'] a.custombutton:hover {
-  background-color: #273023;
+  background-color: transparent;
   border-color: #273023;
 }

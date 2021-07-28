@@ -14,7 +14,7 @@ module.exports = {
   projectName: 'til', // Usually your repo name.
   themeConfig: {
     colorMode: {
-      defaultMode: 'light',
+      defaultMode: 'dark',
     },
     navbar: {
       title: 'TIL',
@@ -30,7 +30,7 @@ module.exports = {
           items: [
             {
               label: '7월',
-              to: 'docs/21년07월/firstweek/day1',
+              to: 'docs/21년07월/secondweek/day1',
             },
             // {
             //   label: '2주차',
