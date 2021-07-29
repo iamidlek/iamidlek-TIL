@@ -1,0 +1,140 @@
+---
+title: Day 4
+sidebar_position: 4
+---
+
+export const Highlight = ({children, bgcolor, color}) => (
+  <span
+    style={{
+      backgroundColor: bgcolor,
+      borderRadius: '5px',
+      color: color,
+      padding: '0.1em 0.3em',
+      margin: '0 0.05em 0 0',
+    }}>
+    {children}
+  </span>
+);
+
+export const Highlights = ({children, bgcolor, color}) => (
+  <div style={{
+        margin: '0 0 0.5em 0',
+      }}>
+    <span
+      style={{
+        backgroundColor: bgcolor,
+        borderRadius: '5px',
+        color: color,
+        padding: '0.1em 0.3em',
+      }}>
+      {children}
+    </span>
+  </div>
+);
+
+
+## Progress
+<Highlights bgcolor="#DB9509" color="#fff">프론트엔드 개발 초격차 패키지</Highlights>
+
+<Highlights bgcolor="#4B0082" color="#fff">HTML/CSS/JS로 만드는 스타벅스 웹사이트</Highlights> 
+
+<Highlight bgcolor="#25c2a0" color="#fff">클립 번호</Highlight> 41~69
+
+
+## Summary
+#### CSS속성
+- margin, padding 사용법
+- box-sizing, overflow 사용법
+- flex 에대한 이해
+- transition, transfrom 사용해보기
+
+<!-- [Details](https://yhole.notion.site/001-C-with-Visual-Studio-f32f93cb0321401f9ec389c5d1df5cc7) -->
+
+#### 예제 만들기
+- Overwatch 캐릭터 선택 예제 만들기
+
+<!-- [Details](https://yhole.notion.site/002-c594763fcf1c4e35be9941f45d5015a5) -->
+
+## Quiz
+#### 문제 1. transition 단축속성의 설명이 틀린 것은?
+1. property 어떤 속성에 적용할 것인지 적어야하므로 필수 적이다.
+2. duration 얼마나 지속해야하는지 정해야하므로 필수 적인다.
+3. timing-function 효과의 타이밍을 정하는 함수이다.
+4. delay 에 적은 시간 이후에 효과가 시작된다
+
+<details>
+  <summary>
+  답안 확인
+  </summary>
+  <ul class='quiz'>
+    <li>①</li>
+    <li>기본 값은 all로 필수 항목은 아니다</li>
+  </ul>
+</details>
+
+#### 문제 2. 2D 변환 함수가 아닌것은?
+1. translate
+2. scale
+3. rotate
+4. transfrom
+
+<details>
+  <summary>
+  답안 확인
+  </summary>
+  <ul class='quiz'>
+    <li>④</li>
+    <li>transfrom 은 속성이다</li>
+    <li>transfrom:translate(x,y) 이동시키기</li>
+  </ul>
+</details>
+
+
+#### 문제 3. .arrow-grow는 어디가 기준이 될까?
+```CSS title="html 구조를 따르고 있다"
+.signboard__items .shopnow__items a {
+  position: relative;
+}
+.border-move{
+  position: absolute;
+}
+a:hover .border-move{
+  width: 92%;
+  height: 70%;
+}
+.shopnow__items a h3{
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding-left: 22px;
+}
+.arrow-grow{
+  position: absolute;
+}
+.arrow-body{
+  border-top: 2px solid transparent;
+  position: absolute;
+}
+```
+1. .border-move
+2. a
+3. .arrow-body 
+4. h3
+
+<details>
+  <summary>
+  답안 확인
+  </summary>
+  <ul class='quiz'>
+    <li>①</li>
+    <li>position이 static이 아닌 부모가 기준이 되므로</li>
+  </ul>
+</details>
+
+## Evidence
+- 확인용 사진
+
+![Evidence1](/img/ev/2주차/4-1.jpg)
+- 확인용 캡쳐
+
+![Evidence2](/img/ev/2주차/4-2.png)
