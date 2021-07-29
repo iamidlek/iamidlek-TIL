@@ -3,12 +3,12 @@ title: Day 2
 sidebar_position: 2
 ---
 
-export const Highlight = ({children, color}) => (
+export const Highlight = ({children, bgcolor, color}) => (
   <span
     style={{
-      backgroundColor: color,
+      backgroundColor: bgcolor,
       borderRadius: '5px',
-      color: '#fff',
+      color: color,
       padding: '0.1em 0.3em',
       margin: '0 0.05em 0 0',
     }}>
@@ -16,4 +16,106 @@ export const Highlight = ({children, color}) => (
   </span>
 );
 
+export const Highlights = ({children, bgcolor, color}) => (
+  <div style={{
+        margin: '0 0 0.5em 0',
+      }}>
+    <span
+      style={{
+        backgroundColor: bgcolor,
+        borderRadius: '5px',
+        color: color,
+        padding: '0.1em 0.3em',
+      }}>
+      {children}
+    </span>
+  </div>
+);
+
+
 ## Progress
+<Highlights bgcolor="#DB9509" color="#fff">프론트엔드 개발 초격차 패키지</Highlights>
+
+<Highlights bgcolor="#4B0082" color="#fff">HTML/CSS/JS로 만드는 스타벅스 웹사이트</Highlights> 
+
+<Highlight bgcolor="#25c2a0" color="#fff">클립 번호</Highlight> 1~40
+
+
+## Summary
+#### VScode 설정
+- 확장기능 설치
+- 단축키 정리
+- tab 공백 2로 설정
+
+<!-- [Details](https://yhole.notion.site/001-C-with-Visual-Studio-f32f93cb0321401f9ec389c5d1df5cc7) -->
+
+#### HTML 기본
+- 인라인, 블럭요소
+- 전역 속성
+- 핵심 태그
+
+<!-- [Details](https://yhole.notion.site/002-c594763fcf1c4e35be9941f45d5015a5) -->
+
+#### CSS 개요
+- 선택자
+- 가상클래스
+
+## Quiz
+#### 문제 1. 선택자가 a:hover .logo img 일때 틀린 설명은?
+1. a 태그 영역에 마우스가 올라가면 적용된다.
+2. .logo 선택자는 생략해도 된다.
+3. img 에 속성이 적용 된다.	
+4. 선택자 점수를 계산하면 12점의 점수를 가진다.
+
+<details>
+  <summary>
+  답안 확인
+  </summary>
+  <ul class='quiz'>
+    <li>②</li>
+    <li>자식요소로 img 태그가 하나가 아니거나</li>
+    <li>a 태그의 다른 img 태그에 적용될 수 있으므로</li>
+  </ul>
+</details>
+
+#### 문제 2. 다음중 인라인 요소가 아닌것은?
+1. a
+2. kbd
+3. sup
+4. hr
+
+<details>
+  <summary>
+  답안 확인
+  </summary>
+  <ul class='quiz'>
+    <li>④</li>
+    <li>hr은 한줄의 선을 그어주는 요소로서</li>
+    <li>꾸미기 용도가아닌 의미적인 용도로 쓰인다</li>
+  </ul>
+</details>
+
+
+#### 문제 3. input태그의 type 속성이 아닌것은?
+1. button, checkbox, email
+2. file, image, password
+3. reset, search, get 
+4. tel, url, radio
+
+<details>
+  <summary>
+  답안 확인
+  </summary>
+  <ul class='quiz'>
+    <li>③</li>
+    <li>get은 form의 method 속성의 값으로 사용된다</li>
+  </ul>
+</details>
+
+## Evidence
+- 확인용 사진
+
+![Evidence1](/img/ev/2주차/2-1.jpg)
+- 확인용 캡쳐
+
+![Evidence2](/img/ev/2주차/2-2.png)
