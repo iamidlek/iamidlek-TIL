@@ -69,10 +69,6 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 .mainpage-github-link:hover {
   opacity: 0.7;
-  /* width: 26px; */
-  /* height: 24px; */
-  /* background: url('/img/git_logo_on.svg') no-repeat; */
-  /* background-size: cover; */
 }
 
 .mainpage-github-link {
