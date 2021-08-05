@@ -1,0 +1,61 @@
+---
+title: Day 5
+sidebar_position: 5
+---
+
+export const Highlight = ({children, bgcolor, color}) => (
+  <span
+    style={{
+      backgroundColor: bgcolor,
+      borderRadius: '5px',
+      color: color,
+      padding: '0.1em 0.3em',
+      margin: '0 0.05em 0 0',
+    }}>
+    {children}
+  </span>
+);
+
+export const Highlights = ({children, bgcolor, color}) => (
+  <div style={{
+        margin: '0 0 0.5em 0',
+      }}>
+    <span
+      style={{
+        backgroundColor: bgcolor,
+        borderRadius: '5px',
+        color: color,
+        padding: '0.1em 0.3em',
+      }}>
+      {children}
+    </span>
+  </div>
+);
+
+
+## Progress
+<Highlights bgcolor="#DB9509" color="#fff">프론트엔드 개발 초격차 패키지</Highlights>
+
+<Highlights bgcolor="#4B0082" color="#fff">HTML/CSS/JS로 만드는 스타벅스 웹사이트</Highlights> 
+
+<Highlight bgcolor="#25c2a0" color="#fff">클립 번호</Highlight> 70 ~ 84
+
+
+## Summary
+#### Rubber Duck Debugging
+- 문제 해결을 위한 방법의 하나
+- 고무 오리 또는 가상의 인물에게 설명하기
+- 실제 사람에게 설명하면서 답을 떠올려보기
+
+#### JS 선행
+- 함수 재확인
+- 조건문 재확인
+- DOM API
+- 메소드 체이닝
+
+### 스타벅스 예제
+- 헤드 부분 채우기
+- 헤더 만들기
+
+<!-- [Details](https://yhole.notion.site/002-c594763fcf1c4e35be9941f45d5015a5) -->
+
