@@ -1,0 +1,59 @@
+---
+title: Day 3
+sidebar_position: 3
+---
+
+export const Highlight = ({children, bgcolor, color}) => (
+  <span
+    style={{
+      backgroundColor: bgcolor,
+      borderRadius: '5px',
+      color: color,
+      padding: '0.1em 0.3em',
+      margin: '0 0.05em 0 0',
+    }}>
+    {children}
+  </span>
+);
+
+export const Highlights = ({children, bgcolor, color}) => (
+  <div style={{
+        margin: '0 0 0.5em 0',
+      }}>
+    <span
+      style={{
+        backgroundColor: bgcolor,
+        borderRadius: '5px',
+        color: color,
+        padding: '0.1em 0.3em',
+      }}>
+      {children}
+    </span>
+  </div>
+);
+
+
+## Progress
+<Highlights bgcolor="#DB9509" color="#fff">프론트엔드 개발 초격차 패키지</Highlights>
+
+<Highlights bgcolor="#4B0082" color="#fff">HTML/CSS/JS로 만드는 스타벅스 웹사이트</Highlights> 
+
+<Highlight bgcolor="#25c2a0" color="#fff">클립 번호</Highlight> 85~99
+
+
+## Summary
+### 스타벅스 예제
+- 메인 메뉴
+- 드롭다운
+- lodash , gsap 활용
+- 배지
+- 슬라이드
+- 이미지 슬라이드
+
+## Evidence
+- 확인용 사진
+
+![Evidence1](/img/ev/3주차/3-1.jpg)
+- 확인용 캡쳐
+
+![Evidence2](/img/ev/3주차/3-2.png)
