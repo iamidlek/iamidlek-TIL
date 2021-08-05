@@ -32,10 +32,10 @@ module.exports = {
               label: '7월',
               to: 'docs/21년07월/secondweek/day1',
             },
-            // {
-            //   label: '2주차',
-            //   to: 'docs/21년07월/twoweek/day1',
-            // },
+            {
+              label: '8월',
+              to: 'docs/21년08월/week3/day1',
+            },
             // {
             //   label: 'devlog',
             //   to: 'docs/TIL/html/day1',
