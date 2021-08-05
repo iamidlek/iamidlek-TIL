@@ -1,0 +1,105 @@
+---
+title: Day 2
+sidebar_position: 2
+---
+
+export const Highlight = ({children, bgcolor, color}) => (
+  <span
+    style={{
+      backgroundColor: bgcolor,
+      borderRadius: '5px',
+      color: color,
+      padding: '0.1em 0.3em',
+      margin: '0 0.05em 0 0',
+    }}>
+    {children}
+  </span>
+);
+
+export const Highlights = ({children, bgcolor, color}) => (
+  <div style={{
+        margin: '0 0 0.5em 0',
+      }}>
+    <span
+      style={{
+        backgroundColor: bgcolor,
+        borderRadius: '5px',
+        color: color,
+        padding: '0.1em 0.3em',
+      }}>
+      {children}
+    </span>
+  </div>
+);
+
+
+## Progress
+<Highlights bgcolor="#DB9509" color="#fff">Intro to Programming</Highlights>
+
+<Highlights bgcolor="#4B0082" color="#fff">파이썬 업무자동화</Highlights> 
+
+<Highlight bgcolor="#25c2a0" color="#fff">클립 번호</Highlight> 88~104
+
+
+## Summary
+#### 모듈 활용하기
+- openpyxl 활용
+- email
+- smtplib
+- re
+
+<!-- [Details](https://yhole.notion.site/001-C-with-Visual-Studio-f32f93cb0321401f9ec389c5d1df5cc7) -->
+
+#### 텍스트 파일 다루기
+- 텍스트 파일 다루기
+- 엑셀 파일 다루기
+
+<!-- [Details](https://yhole.notion.site/002-c594763fcf1c4e35be9941f45d5015a5) -->
+
+#### 이메일 발송
+- 이메일 발송 원리
+- 텍스트 이메일 보내기
+- 첨부파일 추가하기
+
+## Quiz
+#### 문제 1. openpyxl 의 설명으로 틀린 것은?
+1. 엑셀 파일을 만들 수 있다.
+2. 엑셀 파일의 내용을 읽어 올 수 있다.
+3. 읽기 전용에서 열로 읽어 올 수 있다.
+4. 새로운 내용을 엑셀에 삽입 할 수 있다.
+
+<details>
+  <summary>
+  답안 확인
+  </summary>
+  <ul class='quiz'>
+    <li>③</li>
+    <li>행으로 읽어 올 수 있다</li>
+    <li>셀의 순서가 가로로 진행되는 방식이기 때문</li>
+  </ul>
+</details>
+
+#### 문제 2. 메일 기능에서 파일 첨부를 위해 필요하지 않은 절차는?
+1. MIMEBase 로 객체를 생성하여 파일의 타입을 정의하여야한다
+2. 파일을 한번 읽어야 하므로 용량이 크면 오래 걸린다
+3. encode_base64로 인코딩이 필요하다
+4. 파일명은 명시하지 않아도 자동으로 추출 된다
+
+<details>
+  <summary>
+  답안 확인
+  </summary>
+  <ul class='quiz'>
+    <li>④</li>
+    <li>os 라이브러리를 import하여</li>
+    <li>add_header로 파일명을 추가해주어야한다 </li>
+  </ul>
+</details>
+
+## Evidence
+- 확인용 사진
+
+![Evidence1](/img/ev/3주차/2-1.jpg)
+- 확인용 캡쳐
+
+![Evidence2](/img/ev/3주차/2-2.png)
