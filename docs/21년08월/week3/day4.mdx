@@ -1,0 +1,113 @@
+---
+title: Day 4
+sidebar_position: 4
+---
+
+export const Highlight = ({children, bgcolor, color}) => (
+  <span
+    style={{
+      backgroundColor: bgcolor,
+      borderRadius: '5px',
+      color: color,
+      padding: '0.1em 0.3em',
+      margin: '0 0.05em 0 0',
+    }}>
+    {children}
+  </span>
+);
+
+export const Highlights = ({children, bgcolor, color}) => (
+  <div style={{
+        margin: '0 0 0.5em 0',
+      }}>
+    <span
+      style={{
+        backgroundColor: bgcolor,
+        borderRadius: '5px',
+        color: color,
+        padding: '0.1em 0.3em',
+      }}>
+      {children}
+    </span>
+  </div>
+);
+
+
+## Progress
+<Highlights bgcolor="#DB9509" color="#fff">프론트엔드 개발 초격차 패키지</Highlights>
+
+<Highlights bgcolor="#4B0082" color="#fff">HTML/CSS/JS로 만드는 스타벅스 웹사이트</Highlights> 
+
+<Highlight bgcolor="#25c2a0" color="#fff">클립 번호</Highlight> 100~110
+
+## Summary
+### 스타벅스 예제
+- 유튜브 영상 링크, 화면 비율
+- 패럴렉스 만들기
+- 호버시 입체적으로 돌아 뒷면 표시 만들기
+- 스크롤 위치를 감시하여 동작하는 기능 구현하기
+- 슬라이드 만들기
+- Scorllto 이용하기
+
+## Quiz
+#### 문제 1. 자식요소 &lt;a&gt; 를 중앙정렬하기위한 조합이 아닌것은?
+
+```css
+div{
+  width: 300px;
+  height: 300px;
+}
+
+1. div{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  }
+
+2. a{
+  display: block; 
+  width: 5px;
+  height: 5px;
+  margin: auto; 
+  } 
+
+3. div{
+  position:relative
+  }
+  a{
+  position:absolute;
+  width: 50px;
+  height: 50px; 
+  margin-top:50%;
+  top: -25px;
+  margin-left:50%;
+  left: -25px
+  }
+  
+4. div{
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  line-height: 300px ;
+  }
+```
+<details>
+  <summary>
+  답안 확인
+  </summary>
+  <ul class='quiz'>
+    <li>②</li>
+    <li>2번의 경우 좌우 정렬만 일어난다</li>
+    <li>1번의 경우 자식이 인라인이나 블록이나 가능</li>
+    <li>3의 경우엔 요소 자체는 중앙 정렬된다 (a 내부 별개)</li>
+    <li>4번의 경우 인라인요소를 유지하면서 정렬이 된다</li>
+  </ul>
+</details>
+
+## Evidence
+- 확인용 사진
+
+![Evidence1](/img/ev/3주차/4-1.jpg)
+- 확인용 캡쳐
+
+![Evidence2](/img/ev/3주차/4-2.png)
