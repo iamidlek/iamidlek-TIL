@@ -1,0 +1,89 @@
+---
+title: Day 1
+sidebar_position: 1
+---
+
+export const Highlight = ({children, bgcolor, color}) => (
+  <span
+    style={{
+      backgroundColor: bgcolor,
+      borderRadius: '5px',
+      color: color,
+      padding: '0.1em 0.3em',
+      margin: '0 0.05em 0 0',
+    }}>
+    {children}
+  </span>
+);
+
+export const Highlights = ({children, bgcolor, color}) => (
+  <div style={{
+        margin: '0 0 0.5em 0',
+      }}>
+    <span
+      style={{
+        backgroundColor: bgcolor,
+        borderRadius: '5px',
+        color: color,
+        padding: '0.1em 0.3em',
+      }}>
+      {children}
+    </span>
+  </div>
+);
+
+
+## Progress
+<Highlights bgcolor="#DB9509" color="#fff">Intro to Programming</Highlights>
+
+<Highlights bgcolor="#4B0082" color="#fff">파이썬 업무자동화</Highlights> 
+
+<Highlight bgcolor="#25c2a0" color="#fff">클립 번호</Highlight> 74~87
+
+
+## Summary
+#### 파이썬 변수
+- 문자열
+- 리스트, 튜플
+- 딕셔너리
+
+<!-- [Details](https://yhole.notion.site/001-C-with-Visual-Studio-f32f93cb0321401f9ec389c5d1df5cc7) -->
+
+#### 조건문, 반복문
+- 조건문
+- for문
+- while문
+
+<!-- [Details](https://yhole.notion.site/002-c594763fcf1c4e35be9941f45d5015a5) -->
+
+#### 함수
+- 함수 만들기
+- 함수 활용
+
+<!-- [Details](https://yhole.notion.site/004-d636247fc0cd415083e2ebb83ede9fd6) -->
+
+## Quiz
+#### 문제 1. 리스트의 내장함수에 대한 설명으로 틀린 것은?
+1. insert 는 추가할 요소의 위치를 특정 할수 있다.
+2. remove 는 첫번째로 찾은 위치의 값만 지운다
+3. count 는 리스트의 길이를 반환한다.
+4. pop 은 마지막 요소를 꺼내고 리스트에서 삭제한다
+
+<details>
+  <summary>
+  답안 확인
+  </summary>
+  <ul class='quiz'>
+    <li>③</li>
+    <li>지정한 요소가 몇개 들어있나를 계수한다</li>
+    <li>리스트의 길이는 length로 알 수 있다</li>
+  </ul>
+</details>
+
+## Evidence
+- 확인용 사진
+
+![Evidence1](/img/ev/3주차/1-1.jpg)
+- 확인용 캡쳐
+
+![Evidence2](/img/ev/3주차/1-2.png)
