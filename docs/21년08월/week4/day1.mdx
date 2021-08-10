@@ -1,0 +1,86 @@
+---
+title: Day 1
+sidebar_position: 1
+---
+
+export const Highlight = ({children, bgcolor, color}) => (
+  <span
+    style={{
+      backgroundColor: bgcolor,
+      borderRadius: '5px',
+      color: color,
+      padding: '0.1em 0.3em',
+      margin: '0 0.05em 0 0',
+    }}>
+    {children}
+  </span>
+);
+
+export const Highlights = ({children, bgcolor, color}) => (
+  <div style={{
+        margin: '0 0 0.5em 0',
+      }}>
+    <span
+      style={{
+        backgroundColor: bgcolor,
+        borderRadius: '5px',
+        color: color,
+        padding: '0.1em 0.3em',
+      }}>
+      {children}
+    </span>
+  </div>
+);
+
+
+## Progress
+<Highlights bgcolor="#DB9509" color="#fff">프론트엔드 개발 초격차 패키지</Highlights>
+
+<Highlights bgcolor="#4B0082" color="#fff">JavaScript Essentials</Highlights> 
+
+<Highlight bgcolor="#25c2a0" color="#fff">클립 번호</Highlight> 111~154
+
+
+## Summary
+#### Node.js
+- NVM 사용법
+- NPM 사용법
+- package.json 사용법
+- 버전의 의미
+
+<!-- [Details](https://yhole.notion.site/001-C-with-Visual-Studio-f32f93cb0321401f9ec389c5d1df5cc7) -->
+
+#### 함수 복습
+- 화살표 함수
+- 즉시 실행 함수
+- 타이머 함수
+- 콜백
+
+<!-- [Details](https://yhole.notion.site/002-c594763fcf1c4e35be9941f45d5015a5) -->
+
+
+## Quiz
+#### 문제 1. nvm과 npm의 설명으로 틀린 것은?
+1. nvm → Node.js → npm 순의 설치가 가능하다
+2. nvm도 버전 업그레이드가 가능하다.
+3. npm 은 라이브러리와 패키지를 편리하게 설치하게 해준다.
+4. npm으로 설치한 node 모듈들은 지우면 큰 문제가 된다.
+
+<details>
+  <summary>
+  답안 확인
+  </summary>
+  <ul class='quiz'>
+    <li>④</li>
+    <li>package.json에 정보가 기록되어 있기 때문에</li>
+    <li>모듈을 다 지워도 다시 설치할 수 있다.</li>
+  </ul>
+</details>
+
+## Evidence
+- 확인용 사진
+
+![Evidence1](/img/ev/4주차/1-1.jpg)
+- 확인용 캡쳐
+
+![Evidence2](/img/ev/4주차/1-2.png)
