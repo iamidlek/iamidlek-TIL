@@ -1,0 +1,92 @@
+---
+title: Day 2
+sidebar_position: 2
+---
+
+export const Highlight = ({children, bgcolor, color}) => (
+  <span
+    style={{
+      backgroundColor: bgcolor,
+      borderRadius: '5px',
+      color: color,
+      padding: '0.1em 0.3em',
+      margin: '0 0.05em 0 0',
+    }}>
+    {children}
+  </span>
+);
+
+export const Highlights = ({children, bgcolor, color}) => (
+  <div style={{
+        margin: '0 0 0.5em 0',
+      }}>
+    <span
+      style={{
+        backgroundColor: bgcolor,
+        borderRadius: '5px',
+        color: color,
+        padding: '0.1em 0.3em',
+      }}>
+      {children}
+    </span>
+  </div>
+);
+
+
+## Progress
+<Highlights bgcolor="#DB9509" color="#fff">복습 및 정리</Highlights>
+
+<Highlights bgcolor="#4B0082" color="#fff">기술 블로그 작성</Highlights> 
+
+## Summary
+#### 블로그 생성
+- jekyll을 이용해 생성
+- 테마 적용
+- 개인 스타일 설정
+
+[Go to blog](https://yhole.netlify.app/)
+<!-- [Details](https://yhole.notion.site/001-C-with-Visual-Studio-f32f93cb0321401f9ec389c5d1df5cc7) -->
+
+#### Migration
+- 노션에서 블로그로 내용 이동
+- 태그 변경, 미세조정
+
+<!-- [Details](https://yhole.notion.site/002-c594763fcf1c4e35be9941f45d5015a5) -->
+
+#### 블로그 작성
+- docusaurus로 블로그 만든 내용 작성
+
+
+## Quiz
+#### 문제 1. 하단의 코드의 실행 결과는?
+```javascript
+for (let i = 0; i < 5; i++) {
+  if(i == 3){
+    return ;
+  }
+  console.log(i);
+}
+```
+1. SyntaxError
+2. 012
+3. undefined
+4. 012undefined
+
+<details>
+  <summary>
+  답안 확인
+  </summary>
+  <ul class='quiz'>
+    <li>①</li>
+    <li>이유는 간단하다 return 할 곳이 없다</li>
+    <li>break를 사용하거나 함수 안에 들어가야한다</li>
+  </ul>
+</details>
+
+## Evidence
+- 확인용 사진
+
+![Evidence1](/img/ev/4주차/2-1.jpg)
+- 확인용 캡쳐
+
+![Evidence2](/img/ev/4주차/2-2.png)
