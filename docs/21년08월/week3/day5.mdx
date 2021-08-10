@@ -1,0 +1,58 @@
+---
+title: Day 5
+sidebar_position: 5
+---
+
+export const Highlight = ({children, bgcolor, color}) => (
+  <span
+    style={{
+      backgroundColor: bgcolor,
+      borderRadius: '5px',
+      color: color,
+      padding: '0.1em 0.3em',
+      margin: '0 0.05em 0 0',
+    }}>
+    {children}
+  </span>
+);
+
+export const Highlights = ({children, bgcolor, color}) => (
+  <div style={{
+        margin: '0 0 0.5em 0',
+      }}>
+    <span
+      style={{
+        backgroundColor: bgcolor,
+        borderRadius: '5px',
+        color: color,
+        padding: '0.1em 0.3em',
+      }}>
+      {children}
+    </span>
+  </div>
+);
+
+
+## Progress
+<Highlights bgcolor="#DB9509" color="#fff">git 복습</Highlights>
+
+<Highlights bgcolor="#4B0082" color="#fff">Rubber Duck</Highlights> 
+
+<Highlight bgcolor="#25c2a0" color="#fff">soylent 클론, Rubber Duck</Highlight>
+
+
+## Summary
+#### Rubber Duck Debugging
+- 2주차 과제인 상품 추천 기능 구현
+- 고차함수 활용하는 방법으로 변경
+- let 변수를 선언하지 않는 방법으로 변경
+- 서로 자신의 코드를 설명하며 다양한 문제 해결 방법 확인
+
+#### git flow 복습
+- soylent 메인 페이지 클론 코딩
+- 담당 영역인 slide 부분까지 작업 완료
+- 클론을 통해 git 활용 방법 습득
+- 클론을 통해 js 활용 방법 훈련
+
+
+<!-- [Details](https://yhole.notion.site/002-c594763fcf1c4e35be9941f45d5015a5) -->
