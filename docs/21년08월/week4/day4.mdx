@@ -1,0 +1,92 @@
+---
+title: Day 4
+sidebar_position: 4
+---
+
+export const Highlight = ({children, bgcolor, color}) => (
+  <span
+    style={{
+      backgroundColor: bgcolor,
+      borderRadius: '5px',
+      color: color,
+      padding: '0.1em 0.3em',
+      margin: '0 0.05em 0 0',
+    }}>
+    {children}
+  </span>
+);
+
+export const Highlights = ({children, bgcolor, color}) => (
+  <div style={{
+        margin: '0 0 0.5em 0',
+      }}>
+    <span
+      style={{
+        backgroundColor: bgcolor,
+        borderRadius: '5px',
+        color: color,
+        padding: '0.1em 0.3em',
+      }}>
+      {children}
+    </span>
+  </div>
+);
+
+
+## Progress
+<Highlights bgcolor="#DB9509" color="#fff">컴퓨터공힉 전공 필수 Step1</Highlights>
+
+<Highlights bgcolor="#4B0082" color="#fff">운영체제</Highlights> 
+
+<Highlight bgcolor="#25c2a0" color="#fff">클립 번호</Highlight> 126~142
+
+
+## Summary
+#### Thread
+
+- 스래드  
+  - 하나의 프로세스 내부에서 생성
+  - 여러개의 스레드 생성 가능
+  - 동시에 실행가능
+  - 하나의 프로세스 안에 있으므로 데이터 모두 접근 가능
+
+#### 장점 단점
+
+- 장점
+  - 사용자에 대한 응답성 향상
+  - 자원을 쉽게 공유
+  - 작업이 분리되어 코드가 간결해짐
+- 단점
+  - 한 스레드에 문제가 생기면 전체 영향
+  - 스레드가 많아지면 컨텍스트 스위칭으로 인한 부하
+  - 스케줄링을 잘해야 자원 공유에 문제가 안 생김
+  - 교착상태, 기아 상태가 발생할 수 있음
+
+#### 가상 메모리
+
+- 가상 주소를 사용
+- 실제 사용시에만 물리 주소로 올려준다
+
+#### 페이징 시스템
+
+- 크기가 동일한 페이지로 가상 주소 공간과  
+매칭되는 물리 주소 공간을 관리
+- 프로세스 생성시, 페이지 테이블 정보 생성
+  - CPU가 가상 주소 접근
+  - MMU가 페이지 테이블 base 주소 접근
+  - 실제 물리 주소를 가져온다
+
+#### inode
+
+- 파일 : inode 로 매칭
+- 파일 시스템에서는 inode를 기반으로 파일 엑세스
+- Super Block, inode, Disk Block
+
+
+## Evidence
+- 확인용 사진
+
+![Evidence1](/img/ev/4주차/4-1.jpg)
+- 확인용 캡쳐
+
+![Evidence2](/img/ev/4주차/4-2.jpg)
