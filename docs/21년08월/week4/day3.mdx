@@ -1,0 +1,103 @@
+---
+title: Day 3
+sidebar_position: 3
+---
+
+export const Highlight = ({children, bgcolor, color}) => (
+  <span
+    style={{
+      backgroundColor: bgcolor,
+      borderRadius: '5px',
+      color: color,
+      padding: '0.1em 0.3em',
+      margin: '0 0.05em 0 0',
+    }}>
+    {children}
+  </span>
+);
+
+export const Highlights = ({children, bgcolor, color}) => (
+  <div style={{
+        margin: '0 0 0.5em 0',
+      }}>
+    <span
+      style={{
+        backgroundColor: bgcolor,
+        borderRadius: '5px',
+        color: color,
+        padding: '0.1em 0.3em',
+      }}>
+      {children}
+    </span>
+  </div>
+);
+
+
+## Progress
+<Highlights bgcolor="#DB9509" color="#fff">컴퓨터공힉 전공 필수 Step1</Highlights>
+
+<Highlights bgcolor="#4B0082" color="#fff">운영체제</Highlights> 
+
+<Highlight bgcolor="#25c2a0" color="#fff">클립 번호</Highlight> 112~125
+
+
+## Summary
+#### 인터럽트
+- CPU가 프로그램을 실행하고 있을 때,  
+입출력 하드웨어 등의 장치나 또는 예외상황이 발생하여  
+처리가 필요할 경우에 CPU에 알려서 처리하는 기술
+- 인터럽트의 종류  
+  - 0으로 나누는 경우
+  - 타이머 인터럽트
+  - 입출력 인터럽트
+
+#### 프로세스와 컨텍스트 스위칭
+- 프로세스의 구성
+  - 코드
+  - 데이터
+  - 스택
+  - 힙
+- PCB
+  - 프로세스 ID
+  - 레지스터 값(PC, SP)
+  - 스케쥴러
+  - 메모리 정보
+
+#### IPC(InterProcess Communication)
+- 프로세스간 통신방법
+  - file 사용
+  - 메세지 큐
+  - 메모리 공유
+  - Pipe
+  - Signal
+  - Semaphore
+  - Socket
+
+- 대부분의 IPC 기법은 커널을 통해 이루어진다
+
+## Quiz
+#### 문제 1. 프로세스의 구조가 아닌것은?
+
+1. Stack
+2. BSS
+3. HEAP
+4. Malloc
+
+<details>
+  <summary>
+  답안 확인
+  </summary>
+  <ul class='quiz'>
+    <li>④</li>
+    <li>malloc은 C언어에서 메모리의 사이즈를 미리</li>
+    <li>생성해 놓을때 사용하는 함수다</li>
+  </ul>
+</details>
+
+## Evidence
+- 확인용 사진
+
+![Evidence1](/img/ev/4주차/3-1.jpg)
+- 확인용 캡쳐
+
+![Evidence2](/img/ev/4주차/3-2.jpg)
