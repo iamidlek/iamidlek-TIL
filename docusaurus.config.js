@@ -34,7 +34,7 @@ module.exports = {
             },
             {
               label: '8월',
-              to: 'docs/21년08월/week3/day1',
+              to: 'docs/21년08월/week4/day5',
             },
             // {
             //   label: 'devlog',

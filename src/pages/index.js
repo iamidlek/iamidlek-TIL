@@ -16,7 +16,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg custombutton"
-            to="/docs/21년07월/secondweek/day1">
+            to="/docs/21년08월/week4/day5">
             CHECK!
           </Link>
         </div>
